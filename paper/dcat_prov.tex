@@ -1,0 +1,25 @@
+\documentclass{article}
+\begin{document}
+\section{Managing errors in datasets}
+
+Sometimes government open data are generated through error-prone processes such as, for example, 
+manual data entry, so that these data may be not actually reusable because of errors and noise. In such cases 
+several check and refinement tasks are necessary to get a trustworthy dataset. Moreover, these tasks
+may be performed manually as well. 
+
+Here we describe our experience in reusing open data about schools provided by the Italian Education Ministery 
+\emph{Ministero dell'Istruzione dell'Universit\`a e della Ricerca}, in short \emph{MIUR}.\footnote{\texttt{http://dati.istruzione.it/opendata/opendata/}}
+
+Our goal is to get a \emph{realiable} list of schools in \emph{Catania} 
+among their \emph{websites}. This goal will be achieved with performing some manual and automated tests on
+the dataset of Italian public schools provided by MIUR. Test results will be used to remove errors from the schools
+dataset in order to obtain a restricted version of it but with just \emph{correct} information about schools' websites. 
+Finally, other manual activities will be carried out to attempt filling the holes generated in the previous error-cleaning tasks.
+
+The whole process is described in a dedicated OWL ontology as follows:
+\begin{itemize}
+	\item \emph{Data Catalog Vocabulary (DCAT)}\footnote{\texttt{https://www.w3.org/TR/vocab-dcat/}} is used to describe existing and produced datasets; 
+	\item tests and test result are represented using the \emph{Evaluation and Report Language (EARL)};\footnote{\texttt{https://www.w3.org/TR/EARL10-Schema/}} 
+	\item finally, the dataset generation activities are reported using the \emph{Provenance Ontology (PROV-O)}.\footnote{\texttt{https://www.w3.org/TR/prov-o/}}
+\end{itemize}
+\end{document}
